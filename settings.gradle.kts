@@ -17,3 +17,4 @@ dependencyResolutionManagement {
 rootProject.name = "Money Tree"
 
 include(":app")
+include(":core:logger")

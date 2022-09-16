@@ -16,4 +16,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Money Tree"
 
-include ":app"
+include(":app")

@@ -18,3 +18,4 @@ rootProject.name = "Money Tree"
 
 include(":app")
 include(":core:logger")
+include(":core:common")

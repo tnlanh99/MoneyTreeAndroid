@@ -18,7 +18,6 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
         appInitializer.init(this)
-        logger.setup(BuildConfig.DEBUG)
         logger.d("onCreate")
     }
 }

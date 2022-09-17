@@ -1,9 +1,15 @@
 package com.brown.moneytree.core.logger
 
+import android.app.Application
+import com.brown.moneytree.core.common.Initializable
 import timber.log.Timber
 import javax.inject.Inject
 
-class LoggerImpl @Inject constructor() : Logger {
+class LoggerImpl @Inject constructor() : Logger, Initializable {
+
+    override fun init(application: Application) {
+        setup(BuildConfig.DEBUG)
+    }
 
     override fun setup(debuggable: Boolean) {
         if (debuggable) {

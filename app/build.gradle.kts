@@ -53,6 +53,7 @@ android {
 
 dependencies {
 
+    implementation(project(":core:common"))
     implementation(project(":core:logger"))
 
     implementation("androidx.core:core-ktx:1.9.0")
